@@ -9,6 +9,7 @@ const SEAT_HEIGHT = 50;
 const ratio = window.devicePixelRatio;
 const DRAW_SEAT_WIDTH = SEAT_WIDTH * ratio;
 const DRAW_SEAT_HEIGHT = SEAT_HEIGHT * ratio;
+// 根据最后一个位置来设置画布的宽高，前提是数据已有排序
 const lastSeat = data[data.length - 1];
 const CANVAS_WIDTH = lastSeat.colIndex * SEAT_WIDTH;
 const CANVAS_HEIGHT = lastSeat.rowIndex * SEAT_HEIGHT;
@@ -45,6 +46,7 @@ class SeatSelector extends Component {
         this.selectImage = selectImage;
         this.soldImage = soldImage;
         this.drawAllSeat();
+        this.drawSelectSeat(); // 画已选择的座位
       }
     };
 
@@ -58,7 +60,7 @@ class SeatSelector extends Component {
   }
 
 
-  componentDidUpdate(prevProps, prevState) {
+  componentDidUpdate() {
     this.ctx.clearRect(0, 0, DRAW_CANVAS_WIDTH, DRAW_CANVAS_HEIGHT);
     this.drawAllSeat(); // 画初始座位
     this.drawSelectSeat(); // 画已选择的座位

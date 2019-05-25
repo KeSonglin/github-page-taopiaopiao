@@ -2,11 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './Artist.scss';
 
-/**
-**@desc: 详情页演职员表
-**@date: 2018/4/15
-**@author: 程松(贰叁)
-*/
 
 const Artist = ({ data }) => {
   return (

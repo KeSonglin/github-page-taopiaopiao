@@ -27,13 +27,26 @@
   //}
 
   .movieTicket {
-    //display: inline-block;
+    position: relative;
     display: flex;
     width: 84px;
     height: 36px;
     border: 1px solid $border;
     border-radius: 4px;
-    //padding-right: 2px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: -1px;
+      top: 13px;
+      height: 8px;
+      width: 6px;
+      background-color: #fff;
+      border: 1px solid $border;
+      border-radius: 0 50% 50% 0;
+      border-left: none;
+      box-sizing: border-box;
+    }
 
     &__detail {
       padding-left: 10px;

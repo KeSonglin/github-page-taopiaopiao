@@ -18,6 +18,11 @@
     .slick-track {
       height: 100%;
     }
+
+    // 修复组件内部嵌入空div的高度显示不对
+    .slick-slide>div {
+      height: 100%;
+    }
   }
 
   &__index {

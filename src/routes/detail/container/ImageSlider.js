@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import Slider from 'react-slick';
-import './ImageSlide.scss';
+import './ImageSlider.scss';
 
 class ImageSlider extends Component {
   state = {
