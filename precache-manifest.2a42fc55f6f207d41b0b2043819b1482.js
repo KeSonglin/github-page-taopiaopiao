@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c4ead922f735c720e583a136396f7405",
+    "revision": "5bc20b19ca95666b1cc34b381e8efb84",
     "url": "/taopiaopiao/index.html"
   },
   {
-    "revision": "b1c10946b677b467fecb",
+    "revision": "e7ae1170f552cbe72298",
     "url": "/taopiaopiao/static/css/main.0a33b786.chunk.css"
   },
   {
-    "revision": "9ba3a2d357aea877f26b",
-    "url": "/taopiaopiao/static/js/2.e55700fd.chunk.js"
+    "revision": "255a0ada1cfa80883e8b",
+    "url": "/taopiaopiao/static/js/2.dcc6ad43.chunk.js"
   },
   {
-    "revision": "b1c10946b677b467fecb",
-    "url": "/taopiaopiao/static/js/main.36df5354.chunk.js"
+    "revision": "e7ae1170f552cbe72298",
+    "url": "/taopiaopiao/static/js/main.ad9dcf1c.chunk.js"
   },
   {
     "revision": "a7304ffe3c2b6c396bfd",
